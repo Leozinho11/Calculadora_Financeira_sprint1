@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF1F1;
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    width: 60%;
+}
+
+button{
+    margin-bottom: 16px;
+    background-color: #BF343F;
+    color: #FFF1F1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #841620;
+    transform: 0.2;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    border: solid 5px #BF343F;
+    border-radius: 30px;
+}
+
+.maintext{
+    margin-top: 16px;
+    margin-right: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+#div_Resultado{
+    margin-bottom: 16px;
+}
+

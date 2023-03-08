@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <title>Calculadora Financeira - Quality Beef</title>
+</head>
+<body>
+    <h2 class="maintext">Segundo o site Intersam, da Espanha, na América Latina se desperdiça cerca de 20% de carnes anualmente devido á má conservação da mesma durante o seu transporte em caminhões que não estão com a temperatura correta.</h2>
+    
+    <div class="container">
+        <p>Veja o quanto você evita de perder anualmente usando o sensor da <b><i>Quality Beef</i></b> para monitorar a temperatura correta para o transporte da sua carne: </p>
+        
+        Insira o valor anual de vendas: <input id="input_vendas"><br>
+        <button onclick="calcularValor()">VER RESULTADO</button>
+    
+        <div id="div_Resultado"></div> 
+    </div>
+</body>
+</html>
+
+<script>
+    function calcularValor() {
+        var valorAnual = Number(input_vendas.value)
+        var valorPrejuízo = valorAnual * 0.20
+
+        if (valorPrejuízo > 0) {
+            div_Resultado.innerHTML = `Com o sensor da <b>Quality Beef</b> você evita de perder aproximadamente <b>R$ ${valorPrejuízo}</b> por ano !`
+        }
+
+        if (valorPrejuízo <= 0) {
+            alert("Insira um valor válido !")
+        }
+    }
+</script>
